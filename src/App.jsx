@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./App.css";
 import Home from "./home/Home";
+import Navbar from "./navbar/Navbar";
 
 
 const CustomInput = ({
@@ -82,6 +83,7 @@ function App() {
 
   return (
     <>
+    <Navbar/>
     <Home/>
       <div className="app-container">
         <form onSubmit={handleSubmit} className="login-form" noValidate>
